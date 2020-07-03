@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		body{
+			margin: 0;
+			height: 100vh;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.header{
+			height: 15vh;
+			background: red;
+		}
+
+		.links{
+			height: 100%;
+			color:white;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			font-size: 30px;
+		}
+
+		.content{
+			flex-grow: 1;
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.sidebar{
+			background: green;
+			width: 15vw;
+		}
+
+		.button{
+			align-self: center;
+		}
+
+		.footer{
+			height: 15vh;
+			transform: translateY(100%);
+			background: grey;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="links">
+			<div class="link">Link 1</div>
+			<div class="link">Link 2</div>
+			<div class="link">Link 3</div>
+		</div>
+	</div>
+	<div class="content">
+		<div class="sidebar left"></div>
+		<button class="button">REVERSE!</button>
+		<div class="sidebar right"></div>
+	</div>
+	<div class="footer"></div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js" defer></script>
+<script type="text/javascript" src="app.js" defer></script>
+</html>
